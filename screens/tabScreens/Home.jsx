@@ -442,7 +442,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "white",
     // paddingTop:20,
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     paddingTop: 10,
     paddingBottom: 20,
     // borderColor:"red",
