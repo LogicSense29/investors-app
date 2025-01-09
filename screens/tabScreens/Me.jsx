@@ -21,7 +21,6 @@ import {
 import * as ImagePicker from "expo-image-picker";
 import Products from "../../component/Products";
 import Test2 from "../../component/Test2";
-import Invest from "../../component/Invest";
 
 const { width, height } = Dimensions.get("window");
 const placeholderImageSource = { uri: "https://picsum.photos/100/100" };
@@ -110,60 +109,218 @@ export default function Person() {
                 <Text style={{ color: "#fff" }}>ETFs</Text>
               </View>
             </View>
-
-            <View style={{ marginTop: 50 }}>
-              <Text style={{ color: "#fff" }}>
-                Cryptos are split across the different types of technology used
-                to build them
-              </Text>
-            </View>
-
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-between",
-                backgroundColor: "gray",
-                marginTop: 30,
-                height: 20,
-                borderRadius: 5,
-              }}
-            >
-              <View
-                style={{ flexDirection: "row", gap: 4, alignItems: "center" }}
-              >
-                <Text style={{ color: "#fff" }}>Other</Text>
-                <AntDesign name="infocirlceo" color="#fff" size={14} />
-              </View>
-              <View
-                style={{ flexDirection: "row", gap: 4, alignItems: "center" }}
-              >
-                <Text style={{ color: "#fff" }}>97%</Text>
-                <AntDesign name="right" color="#fff" size={14} />
-              </View>
-            </View>
-
-            <View>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: "#fff",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  height: 40,
-                  marginTop: 24,
-                  borderRadius: 20,
-                }}
-              >
-                <Text style={{ fontWeight: "bold" }}>Earn Rewards</Text>
-              </TouchableOpacity>
-            </View>
           </View>
         );
       case 1:
-        return <View></View>;
+        return (
+          <View style={{ marginTop: 30 }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View
+                style={{
+                  backgroundColor: "gray",
+                  height: 150,
+                  width: 150,
+                  borderRadius: 100,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#fff" }}>Crypto</Text>
+              </View>
+
+              <View>
+                <View
+                  style={{
+                    backgroundColor: "#fff",
+                    height: 90,
+                    width: 90,
+                    borderRadius: 100,
+                    marginLeft: -10,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#890709", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#890709" }}>Stocks</Text>
+                </View>
+                <View
+                  style={{
+                    backgroundColor: "gray",
+                    height: 75,
+                    width: 75,
+                    borderRadius: 100,
+                    marginLeft: -15,
+                    marginTop: 50,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#fff" }}>Options</Text>
+                </View>
+              </View>
+
+              <View
+                style={{
+                  backgroundColor: "gray",
+                  height: 75,
+                  width: 75,
+                  borderRadius: 100,
+                  marginLeft: -30,
+                  marginTop: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#fff" }}>ETFs</Text>
+              </View>
+            </View>
+          </View>
+        )
       case 2:
-        return <View></View>;
+        return (
+          <View style={{ marginTop: 30 }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View
+                style={{
+                  backgroundColor: "gray",
+                  height: 150,
+                  width: 150,
+                  borderRadius: 100,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#fff" }}>Crypto</Text>
+              </View>
+
+              <View>
+                <View
+                  style={{
+                    backgroundColor: "gray",
+                    height: 90,
+                    width: 90,
+                    borderRadius: 100,
+                    marginLeft: -10,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#fff" }}>Stocks</Text>
+                </View>
+                <View
+                  style={{
+                    backgroundColor: "gray",
+                    height: 75,
+                    width: 75,
+                    borderRadius: 100,
+                    marginLeft: -15,
+                    marginTop: 50,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#fff" }}>Options</Text>
+                </View>
+              </View>
+
+              <View
+                style={{
+                  backgroundColor: "#fff",
+                  height: 75,
+                  width: 75,
+                  borderRadius: 100,
+                  marginLeft: -30,
+                  marginTop: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#890709" }}>ETFs</Text>
+              </View>
+            </View>
+          </View>
+        )
       case 3:
-        return <View></View>;
+        return (
+          <View style={{ marginTop: 30 }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View
+                style={{
+                  backgroundColor: "gray",
+                  height: 150,
+                  width: 150,
+                  borderRadius: 100,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#fff" }}>Crypto</Text>
+              </View>
+
+              <View>
+                <View
+                  style={{
+                    backgroundColor: "gray",
+                    height: 90,
+                    width: 90,
+                    borderRadius: 100,
+                    marginLeft: -10,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#fff" }}>Stocks</Text>
+                </View>
+                <View
+                  style={{
+                    backgroundColor: "#fff",
+                    height: 75,
+                    width: 75,
+                    borderRadius: 100,
+                    marginLeft: -15,
+                    marginTop: 50,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#890709", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#890709" }}>Options</Text>
+                </View>
+              </View>
+
+              <View
+                style={{
+                  backgroundColor: "gray",
+                  height: 75,
+                  width: 75,
+                  borderRadius: 100,
+                  marginLeft: -30,
+                  marginTop: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#fff" }}>ETFs</Text>
+              </View>
+            </View>
+          </View>
+        )
     }
   };
 
@@ -225,7 +382,7 @@ export default function Person() {
   StatusBar.setBackgroundColor("#890709");
   return (
     <SafeAreaView>
-      <ScrollView style={{ height: height + 100 }}>
+      <ScrollView showsVerticalScrollIndicator={false} style={{ height: height + 100 }}>
         <View style={styles.mainContainer}>
           <View style={[styles.profileInfo, { zIndex: 1000 }]}>
             <View
@@ -463,12 +620,8 @@ export default function Person() {
 const styles = StyleSheet.create({
   mainContainer: {
     alignItems: "center",
-    // backgroundColor: "blue",
-    height: height - 70,
-    // paddingTop:20,
+    height: height + 150,
     paddingHorizontal: 20,
-    // paddingTop: 10,
-    // paddingBottom: 20,
     gap: 25,
   },
   profileInfo: {
@@ -501,11 +654,10 @@ const styles = StyleSheet.create({
   close: {
     textAlign: "center",
     fontSize: 14,
+    alignSelf: 'center',
   },
   active: {
-    backgroundColor: "#890709",
     color: "white",
-    lineHeight: 20,
     borderRadius: 100,
     fontSize: 18,
   },
