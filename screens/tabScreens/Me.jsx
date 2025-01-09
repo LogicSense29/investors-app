@@ -21,13 +21,151 @@ import {
 import * as ImagePicker from "expo-image-picker";
 import Products from "../../component/Products";
 import Test2 from "../../component/Test2";
+import Invest from "../../component/Invest";
+
 const { width, height } = Dimensions.get("window");
 const placeholderImageSource = { uri: "https://picsum.photos/100/100" };
+
+const tabs = ["Crypto", "Stocks", "ETFs", "Options"];
 
 export default function Person() {
   const navigation = useNavigation();
   const [selectedImage, setSelectedImage] = useState(null);
   const [showImageOptions, setShowImageOptions] = useState(false);
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const handleIndexChange = (index) => {
+    setSelectedIndex(index);
+    // Handle the selected index change
+  };
+
+  const renderContent = () => {
+    switch (selectedIndex) {
+      case 0:
+        return (
+          <View style={{ marginTop: 30 }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View
+                style={{
+                  backgroundColor: "#fff",
+                  height: 150,
+                  width: 150,
+                  borderRadius: 100,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#890709" }}>Crypto</Text>
+              </View>
+
+              <View>
+                <View
+                  style={{
+                    backgroundColor: "gray",
+                    height: 90,
+                    width: 90,
+                    borderRadius: 100,
+                    marginLeft: -10,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#fff" }}>Stocks</Text>
+                </View>
+                <View
+                  style={{
+                    backgroundColor: "gray",
+                    height: 75,
+                    width: 75,
+                    borderRadius: 100,
+                    marginLeft: -15,
+                    marginTop: 50,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#fff" }}>Options</Text>
+                </View>
+              </View>
+
+              <View
+                style={{
+                  backgroundColor: "gray",
+                  height: 75,
+                  width: 75,
+                  borderRadius: 100,
+                  marginLeft: -30,
+                  marginTop: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#fff" }}>ETFs</Text>
+              </View>
+            </View>
+
+            <View style={{ marginTop: 50 }}>
+              <Text style={{ color: "#fff" }}>
+                Cryptos are split across the different types of technology used
+                to build them
+              </Text>
+            </View>
+
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                backgroundColor: "gray",
+                marginTop: 30,
+                height: 20,
+                borderRadius: 5,
+              }}
+            >
+              <View
+                style={{ flexDirection: "row", gap: 4, alignItems: "center" }}
+              >
+                <Text style={{ color: "#fff" }}>Other</Text>
+                <AntDesign name="infocirlceo" color="#fff" size={14} />
+              </View>
+              <View
+                style={{ flexDirection: "row", gap: 4, alignItems: "center" }}
+              >
+                <Text style={{ color: "#fff" }}>97%</Text>
+                <AntDesign name="right" color="#fff" size={14} />
+              </View>
+            </View>
+
+            <View>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: "#fff",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: 40,
+                  marginTop: 24,
+                  borderRadius: 20,
+                }}
+              >
+                <Text style={{ fontWeight: "bold" }}>Earn Rewards</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        );
+      case 1:
+        return <View></View>;
+      case 2:
+        return <View></View>;
+      case 3:
+        return <View></View>;
+    }
+  };
 
   const imageSource = selectedImage
     ? { uri: selectedImage }
@@ -122,42 +260,32 @@ export default function Person() {
                 </Text>
               </TouchableOpacity>
             </View>
-            <View
-              style={{
-                flexDirection: "column",
-                justifyContent: "space-between",
-                alignItems: "center",
-                backgroundColor: "transparent",
-                flex: 1,
-              }}
-            >
-              {/* <Image
-              source={imageSource}
-              style={styles.image}
-              resizeMode="cover"
-            />
-            <AntDesign
-              name="pluscircle"
-              size={30}
-              color="white"
-              style={styles.addImageIcon}
-              onPress={pickImageAsync}
-            />
-            <Text
-              style={{
-                fontFamily: "OpenSans_500Medium",
-                color: "white",
-                fontSize: 20,
-              }}
-            >
-              Odunsi Oluwabukola
-            </Text>
 
-            <Text style={{ fontFamily: "OpenSans_400Regular", color: "white" }}>
-              <Text>2 UMéRA Products</Text>
-            </Text> */}
-              {/* <Test2 /> */}
-            </View>
+            <ScrollView showsVerticalScrollIndicator={false} style={{marginTop: 20, }}>
+              <View style={{ backgroundColor: "#890709" }}>
+                <View style={{ flexDirection: "row", gap: 50 }}>
+                  {tabs.map((data, index) => (
+                    <TouchableOpacity
+                      style={{}}
+                      onPress={() => handleIndexChange(index)}
+                    >
+                      <Text
+                        style={[
+                          styles.close,
+                          selectedIndex === index
+                            ? styles.active
+                            : styles.inactive,
+                        ]}
+                      >
+                        {data}
+                      </Text>
+                    </TouchableOpacity>
+                  ))}
+                </View>
+                {/* Display the content returned by renderContent */}
+              </View>
+              {renderContent()}
+            </ScrollView>
 
             {/* Product Section  */}
           </View>
@@ -340,13 +468,13 @@ const styles = StyleSheet.create({
     // paddingTop:20,
     paddingHorizontal: 20,
     // paddingTop: 10,
-    paddingBottom: 20,
+    // paddingBottom: 20,
     gap: 25,
   },
   profileInfo: {
     backgroundColor: "#890709",
     paddingTop: 10,
-    paddingBottom: 40,
+    paddingBottom: 10,
     paddingHorizontal: 20,
     alignItems: "stretch",
     justifyContent: "space-between",
@@ -360,7 +488,7 @@ const styles = StyleSheet.create({
   },
   addImageIcon: {
     position: "absolute",
-    bottom: 50,
+    // bottom: 50,
     right: 125,
   },
   profileItem: {
@@ -369,5 +497,21 @@ const styles = StyleSheet.create({
     padding: 20,
     width: "100%",
     gap: 20,
+  },
+  close: {
+    textAlign: "center",
+    fontSize: 14,
+  },
+  active: {
+    backgroundColor: "#890709",
+    color: "white",
+    lineHeight: 20,
+    borderRadius: 100,
+    fontSize: 18,
+  },
+  inactive: {
+    color: "gray",
+    lineHeight: 20,
+    borderRadius: 100,
   },
 });

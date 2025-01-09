@@ -6,6 +6,7 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import BackButton from "../../component/BackButton";
+import Invest from "../../component/Invest"
 
 const InvestmentScreen = () => {
   const navigation = useNavigation();
@@ -24,6 +25,7 @@ const InvestmentScreen = () => {
       }}
     >
       <Text>InvestmentScreen</Text>
+      {/* <Invest /> */}
       <BackButton />
     </SafeAreaProvider>
   );
