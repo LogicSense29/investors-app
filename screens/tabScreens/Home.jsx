@@ -26,11 +26,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const { width, height } = Dimensions.get("window");
 
 export default function Home() {
+
   const [newUser, setNewUser] = useState(false);
   const [showROI, setShowROI] = useState(false);
   const [refreshing, setRefreshing] = React.useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [product, setProduct] = useState([
+
     {
       id: 1,
       name: "Cattle Park",
@@ -59,6 +61,7 @@ export default function Home() {
       image: { uri: "https://picsum.photos/100/100" },
     },
   ]);
+
   const [numberOfInvestmentors, setNumberOfInvestors] = useState([
     {
       id: 1,
@@ -81,6 +84,7 @@ export default function Home() {
       numberOfInvestment: 1000,
     },
   ]);
+
   const [investmentDetails, setInvestmentDetails] = useState([
     {
       id: 1,
@@ -259,7 +263,7 @@ export default function Home() {
     AppState.reload();
   };
   return (
-    <SafeAreaView style={{ backgroundColor: "white", height: height }}>
+    <SafeAreaView style={{ backgroundColor: "white", flex: 1 }}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         refreshControl={
