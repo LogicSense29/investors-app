@@ -90,6 +90,7 @@ export default function Discover() {
       date: "May 26th 2024",
     },
   ]);
+
   const [likedArray, setLikedArray] = useState(Array(ourProducts).fill(false));
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
@@ -312,7 +313,7 @@ export default function Discover() {
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     paddingVertical: 10,
     gap: 25,
   },

@@ -43,7 +43,7 @@ export default function Person() {
     switch (selectedIndex) {
       case 0:
         return (
-          <View style={{ marginTop: 30 }}>
+          <View style={{ marginTop: 20 }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <View
                 style={{
@@ -113,7 +113,7 @@ export default function Person() {
         );
       case 1:
         return (
-          <View style={{ marginTop: 30 }}>
+          <View style={{ marginTop: 20 }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <View
                 style={{
@@ -183,7 +183,7 @@ export default function Person() {
         )
       case 2:
         return (
-          <View style={{ marginTop: 30 }}>
+          <View style={{ marginTop: 20 }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <View
                 style={{
@@ -253,7 +253,7 @@ export default function Person() {
         )
       case 3:
         return (
-          <View style={{ marginTop: 30 }}>
+          <View style={{ marginTop: 20 }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <View
                 style={{
@@ -381,8 +381,8 @@ export default function Person() {
 
   StatusBar.setBackgroundColor("#890709");
   return (
-    <SafeAreaView>
-      <ScrollView showsVerticalScrollIndicator={false} style={{ height: height + 100 }}>
+    <SafeAreaView style={{flex: 1}}>
+      <ScrollView showsVerticalScrollIndicator={false} style={{ }}>
         <View style={styles.mainContainer}>
           <View style={[styles.profileInfo, { zIndex: 1000 }]}>
             <View
@@ -418,7 +418,7 @@ export default function Person() {
               </TouchableOpacity>
             </View>
 
-            <ScrollView showsVerticalScrollIndicator={false} style={{marginTop: 20, }}>
+            <ScrollView showsVerticalScrollIndicator={false} style={{marginTop: 10, }}>
               <View style={{ backgroundColor: "#890709" }}>
                 <View style={{ flexDirection: "row", gap: 50 }}>
                   {tabs.map((data, index) => (
@@ -441,7 +441,9 @@ export default function Person() {
                 </View>
                 {/* Display the content returned by renderContent */}
               </View>
+              <View style={{alignItems: 'center' }}>
               {renderContent()}
+              </View>
             </ScrollView>
 
             {/* Product Section  */}
@@ -620,15 +622,16 @@ export default function Person() {
 const styles = StyleSheet.create({
   mainContainer: {
     alignItems: "center",
-    height: height + 150,
-    paddingHorizontal: 20,
+    // height: height + 150,
+    paddingHorizontal: 15,
     gap: 25,
+    marginBottom: 20,
   },
   profileInfo: {
     backgroundColor: "#890709",
     paddingTop: 10,
     paddingBottom: 10,
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     alignItems: "stretch",
     justifyContent: "space-between",
     height: "40%",
