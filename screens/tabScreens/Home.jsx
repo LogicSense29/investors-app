@@ -46,9 +46,7 @@ export default function Home() {
     {
       id: 3,
       name: "Amaize",
-      image: require("../../assets/farmm-flyer.png") || {
-        uri: "https://picsum.photos/100/100",
-      },
+      image:  require("../../assets/farmm-flyer.png"),
     },
     {
       id: 4,
