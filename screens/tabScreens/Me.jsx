@@ -55,10 +55,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#890709", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#890709" }}>Crypto</Text>
+                <Image
+                  style={{ height: 150, width: 150, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
 
               <View>
@@ -73,8 +73,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
-                  <Text style={{ color: "#fff" }}>Stocks</Text>
+                   <Image
+                  style={{ height: 90, width: 90, borderRadius: 100 }}
+                  source={require("../../assets/amaize-flyer.png")}
+                />
                 </View>
                 <View
                   style={{
@@ -88,8 +90,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
-                  <Text style={{ color: "#fff" }}>Options</Text>
+                   <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/farmm-flyer.png")}
+                />
                 </View>
               </View>
 
@@ -105,8 +109,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
-                <Text style={{ color: "#fff" }}>ETFs</Text>
+                 <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
             </View>
           </View>
@@ -125,10 +131,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#fff" }}>Crypto</Text>
+               <Image
+                  style={{ height: 150, width: 150, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
 
               <View>
@@ -143,8 +149,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#890709", fontWeight: "bold" }}>9%</Text>
-                  <Text style={{ color: "#890709" }}>Stocks</Text>
+                   <Image
+                  style={{ height: 90, width: 90, borderRadius: 100 }}
+                  source={require("../../assets/amaize-flyer.png")}
+                />
                 </View>
                 <View
                   style={{
@@ -158,8 +166,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
-                  <Text style={{ color: "#fff" }}>Options</Text>
+                   <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/farmm-flyer.png")}
+                />
                 </View>
               </View>
 
@@ -175,12 +185,14 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
-                <Text style={{ color: "#fff" }}>ETFs</Text>
+                 <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
             </View>
           </View>
-        )
+        );
       case 2:
         return (
           <View style={{ marginTop: 20 }}>
@@ -195,10 +207,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#fff" }}>Crypto</Text>
+                <Image
+                  style={{ height: 150, width: 150, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
 
               <View>
@@ -213,8 +225,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
-                  <Text style={{ color: "#fff" }}>Stocks</Text>
+                  <Image
+                  style={{ height: 90, width: 90, borderRadius: 100 }}
+                  source={require("../../assets/amaize-flyer.png")}
+                />
                 </View>
                 <View
                   style={{
@@ -228,8 +242,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
-                  <Text style={{ color: "#fff" }}>Options</Text>
+                  <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/farmm-flyer.png")}
+                />
                 </View>
               </View>
 
@@ -245,12 +261,14 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#890709", fontWeight: "bold" }}>0%</Text>
-                <Text style={{ color: "#890709" }}>ETFs</Text>
+                 <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
             </View>
           </View>
-        )
+        );
       case 3:
         return (
           <View style={{ marginTop: 20 }}>
@@ -265,10 +283,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#fff" }}>Crypto</Text>
+                <Image
+                  style={{ height: 150, width: 150, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
 
               <View>
@@ -283,8 +301,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
-                  <Text style={{ color: "#fff" }}>Stocks</Text>
+                  <Image
+                  style={{ height: 90, width: 90, borderRadius: 100 }}
+                  source={require("../../assets/amaize-flyer.png")}
+                />
                 </View>
                 <View
                   style={{
@@ -298,8 +318,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: "#890709", fontWeight: "bold" }}>0%</Text>
-                  <Text style={{ color: "#890709" }}>Options</Text>
+                   <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/farmm-flyer.png")}
+                />
                 </View>
               </View>
 
@@ -315,12 +337,14 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
-                <Text style={{ color: "#fff" }}>ETFs</Text>
+                <Image
+                  style={{ height: 75, width: 75, borderRadius: 100 }}
+                  source={require("../../assets/sales-flyer.png")}
+                />
               </View>
             </View>
           </View>
-        )
+        );
     }
   };
 
@@ -361,6 +385,9 @@ export default function Person() {
       case "Investment":
         navigation.navigate("Investment");
         break;
+      case "VisitationSchedule":
+        navigation.navigate("VisitationSchedule");
+        break;
       default:
       // code block
     }
@@ -381,8 +408,8 @@ export default function Person() {
 
   StatusBar.setBackgroundColor("#890709");
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <ScrollView showsVerticalScrollIndicator={false} style={{ }}>
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView showsVerticalScrollIndicator={false} style={{}}>
         <View style={styles.mainContainer}>
           <View style={[styles.profileInfo, { zIndex: 1000 }]}>
             <View
@@ -418,9 +445,12 @@ export default function Person() {
               </TouchableOpacity>
             </View>
 
-            <ScrollView showsVerticalScrollIndicator={false} style={{marginTop: 10, }}>
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              style={{ marginTop: 10 }}
+            >
               <View style={{ backgroundColor: "#890709" }}>
-                <View style={{ flexDirection: "row", gap: 50 }}>
+                <View style={{ flexDirection: "row", gap: 40 }}>
                   {tabs.map((data, index) => (
                     <TouchableOpacity
                       style={{}}
@@ -441,9 +471,7 @@ export default function Person() {
                 </View>
                 {/* Display the content returned by renderContent */}
               </View>
-              <View style={{alignItems: 'center' }}>
-              {renderContent()}
-              </View>
+              <View style={{ alignItems: "center" }}>{renderContent()}</View>
             </ScrollView>
 
             {/* Product Section  */}
@@ -523,7 +551,7 @@ export default function Person() {
                   justifyContent: "space-between",
                 }}
                 onPress={() => {
-                  onPressList("Visitation Schedule");
+                  onPressList("VisitationSchedule");
                 }}
               >
                 <View style={{ flexDirection: "row", gap: 20 }}>
@@ -657,7 +685,7 @@ const styles = StyleSheet.create({
   close: {
     textAlign: "center",
     fontSize: 14,
-    alignSelf: 'center',
+    marginLeft: 10,
   },
   active: {
     color: "white",
