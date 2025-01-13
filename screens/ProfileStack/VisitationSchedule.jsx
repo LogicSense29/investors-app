@@ -5,6 +5,7 @@ import {
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
+import { PRIMARY } from "../../constants/Colors";
 
 const VisitationSchedule = ({}) => {
   const navigation = useNavigation();
@@ -24,8 +25,21 @@ const VisitationSchedule = ({}) => {
         showsVerticalScrollIndicator={false}
         style={{ marginHorizontal: 15 }}
       >
-        <View>
-          <Text>Visitation Schedule</Text>
+        <View style={{ marginTop: 20 }}>
+          <Text
+            style={{
+              color: PRIMARY,
+              textAlign: "center",
+              fontSize: 20,
+              fontWeight: "500",
+            }}
+          >
+            Schedule a visit
+          </Text>
+
+          <View>
+            
+          </View>
         </View>
       </ScrollView>
     </SafeAreaProvider>

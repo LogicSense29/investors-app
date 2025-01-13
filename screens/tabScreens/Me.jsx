@@ -25,7 +25,7 @@ import Test2 from "../../component/Test2";
 const { width, height } = Dimensions.get("window");
 const placeholderImageSource = { uri: "https://picsum.photos/100/100" };
 
-const tabs = ["Crypto", "Stocks", "ETFs", "Options"];
+const tabs = ["Royal Palm", "NuttyPark", "CattlePark", "A'maize"];
 
 export default function Person() {
   const navigation = useNavigation();
@@ -450,7 +450,7 @@ export default function Person() {
               style={{ marginTop: 10 }}
             >
               <View style={{ backgroundColor: "#890709" }}>
-                <View style={{ flexDirection: "row", gap: 40 }}>
+                <View style={{ flexDirection: "row", gap: 15 }}>
                   {tabs.map((data, index) => (
                     <TouchableOpacity
                       style={{}}
@@ -683,18 +683,13 @@ const styles = StyleSheet.create({
     gap: 20,
   },
   close: {
-    textAlign: "center",
-    fontSize: 14,
-    marginLeft: 10,
+    marginLeft: 12,
   },
   active: {
     color: "white",
-    borderRadius: 100,
-    fontSize: 18,
+    fontSize: 16,
   },
   inactive: {
     color: "gray",
-    lineHeight: 20,
-    borderRadius: 100,
   },
 });
