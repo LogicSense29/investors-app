@@ -7,6 +7,8 @@ import DocumentationScreen from "./DocumentationScreen";
 import InvestmentScreen from "./InvestmentScreen";
 import PaymentHistoryScreen from "./PaymentHistoryScreen";
 import VisitationSchedule from "./VisitationSchedule";
+import EventScreen from "./Event";
+import SavedEventsScreen from "./SavedEventsScreen";
 
 const ProfileStacks = createNativeStackNavigator();
 
@@ -39,6 +41,8 @@ export default function ProfileStack() {
         />
         <ProfileStacks.Screen name="Investment" component={InvestmentScreen} />
         <ProfileStacks.Screen name="VisitationSchedule" component={VisitationSchedule} />
+        <ProfileStacks.Screen name="Event" component={EventScreen} />
+        <ProfileStacks.Screen name="SavedEventsScreen" component={SavedEventsScreen} />
       </ProfileStacks.Group>
     </ProfileStacks.Navigator>
   );
