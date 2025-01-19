@@ -55,10 +55,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 150, width: 150, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#890709" }}>Crypto</Text>
               </View>
 
               <View>
@@ -73,10 +73,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                   <Image
-                  style={{ height: 90, width: 90, borderRadius: 100 }}
-                  source={require("../../assets/amaize-flyer.png")}
-                />
+                  <Image
+                    style={{ height: 90, width: 90, borderRadius: 100 }}
+                    source={require("../../assets/amaize-flyer.png")}
+                  />
                 </View>
                 <View
                   style={{
@@ -90,10 +90,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                   <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/farmm-flyer.png")}
-                />
+                  <Image
+                    style={{ height: 75, width: 75, borderRadius: 100 }}
+                    source={require("../../assets/farmm-flyer.png")}
+                  />
                 </View>
               </View>
 
@@ -109,7 +109,7 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                 <Image
+                <Image
                   style={{ height: 75, width: 75, borderRadius: 100 }}
                   source={require("../../assets/sales-flyer.png")}
                 />
@@ -131,10 +131,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-               <Image
-                  style={{ height: 150, width: 150, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#890709" }}>Crypto</Text>
               </View>
 
               <View>
@@ -149,10 +149,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                   <Image
-                  style={{ height: 90, width: 90, borderRadius: 100 }}
-                  source={require("../../assets/amaize-flyer.png")}
-                />
+                  <Image
+                    style={{ height: 90, width: 90, borderRadius: 100 }}
+                    source={require("../../assets/amaize-flyer.png")}
+                  />
                 </View>
                 <View
                   style={{
@@ -166,10 +166,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                   <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/farmm-flyer.png")}
-                />
+                  <Image
+                    style={{ height: 75, width: 75, borderRadius: 100 }}
+                    source={require("../../assets/farmm-flyer.png")}
+                  />
                 </View>
               </View>
 
@@ -185,7 +185,7 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                 <Image
+                <Image
                   style={{ height: 75, width: 75, borderRadius: 100 }}
                   source={require("../../assets/sales-flyer.png")}
                 />
@@ -207,10 +207,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 150, width: 150, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#890709" }}>Crypto</Text>
               </View>
 
               <View>
@@ -226,9 +226,9 @@ export default function Person() {
                   }}
                 >
                   <Image
-                  style={{ height: 90, width: 90, borderRadius: 100 }}
-                  source={require("../../assets/amaize-flyer.png")}
-                />
+                    style={{ height: 90, width: 90, borderRadius: 100 }}
+                    source={require("../../assets/amaize-flyer.png")}
+                  />
                 </View>
                 <View
                   style={{
@@ -243,9 +243,9 @@ export default function Person() {
                   }}
                 >
                   <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/farmm-flyer.png")}
-                />
+                    style={{ height: 75, width: 75, borderRadius: 100 }}
+                    source={require("../../assets/farmm-flyer.png")}
+                  />
                 </View>
               </View>
 
@@ -261,7 +261,7 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                 <Image
+                <Image
                   style={{ height: 75, width: 75, borderRadius: 100 }}
                   source={require("../../assets/sales-flyer.png")}
                 />
@@ -283,10 +283,10 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 150, width: 150, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                  91%
+                </Text>
+                <Text style={{ color: "#890709" }}>Crypto</Text>
               </View>
 
               <View>
@@ -302,9 +302,9 @@ export default function Person() {
                   }}
                 >
                   <Image
-                  style={{ height: 90, width: 90, borderRadius: 100 }}
-                  source={require("../../assets/amaize-flyer.png")}
-                />
+                    style={{ height: 90, width: 90, borderRadius: 100 }}
+                    source={require("../../assets/amaize-flyer.png")}
+                  />
                 </View>
                 <View
                   style={{
@@ -318,10 +318,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                   <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/farmm-flyer.png")}
-                />
+                  <Image
+                    style={{ height: 75, width: 75, borderRadius: 100 }}
+                    source={require("../../assets/farmm-flyer.png")}
+                  />
                 </View>
               </View>
 
