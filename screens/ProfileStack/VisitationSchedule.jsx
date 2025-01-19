@@ -17,6 +17,7 @@ import { Calendar } from "react-native-calendars";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 // import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import Press from "../../component/Press";
 
 const VisitationSchedule = ({}) => {
   const navigation = useNavigation();
@@ -60,6 +61,7 @@ const VisitationSchedule = ({}) => {
         paddingBottom: insets.bottom,
         paddingLeft: insets.left,
         paddingRight: insets.right,
+        backgroundColor: "#fff",
       }}
     >
       <ScrollView
@@ -81,16 +83,43 @@ const VisitationSchedule = ({}) => {
           >
             Schedule a visit
           </Text>
-          <View style={{ marginTop: "30%" }}>
+          <View style={{ marginTop: "10%" }}>
             <Calendar markedDates={markedDates} onDayPress={onDayPress} />
-            <Button title="Add Event" onPress={() => router.push("Event")} />
+
+            <View style={{ marginTop: 20 }} />
+            <Press
+              style={{
+                height: 40,
+                backgroundColor: "#890709",
+                marginTop: 40,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 5,
+              }}
+              onPress={() => navigation.push("Event")}
+            >
+              <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600" }}>
+                Add Event
+              </Text>
+            </Press>
             {/* // Add this button in CalendarScreen.js to navigate to SavedEventsScreen */}
-            <View style={{ marginVertical: 20 }} />
-            <Button
-              title="View Saved Events"
-              onPress={() => router.push("SavedEventsScreen")}
-            />
-          </View>{" "}
+
+            <Press
+              style={{
+                height: 40,
+                backgroundColor: "#890709",
+                marginTop: 20,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 5,
+              }}
+              onPress={() => navigation.push("SavedEventsScreen")}
+            >
+              <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600" }}>
+                View Saved Events
+              </Text>
+            </Press>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaProvider>

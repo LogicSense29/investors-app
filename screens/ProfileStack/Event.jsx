@@ -3,17 +3,17 @@ import React, { useState, useEffect } from "react";
 import {
   View,
   TextInput,
-  Button,
   SafeAreaView,
   Platform,
   Text,
+  ScrollView,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { useRoute } from "@react-navigation/native";
 import { useNavigation } from "@react-navigation/native";
-
-// import { router } from "expo-router";
+import Press from "../../component/Press";
+import { router } from "expo-router";
 
 export default function EventScreen() {
   const navigation = useNavigation();
@@ -69,35 +69,68 @@ export default function EventScreen() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#ffffff" }}>
-      <View style={{ marginTop: "30%" }}>
-        {/* Input for Event Title */}
-        <TextInput
-          placeholder="Event Title"
-          value={title}
-          onChangeText={setTitle}
-          style={{ marginBottom: 20 }}
-        />
-
-        {/* Button to show Time Picker */}
-        <Button onPress={showTimepicker} title="Pick Time" />
-        {showTimePicker && (
-          <DateTimePicker
-            value={time} // Ensure date is always a Date object
-            mode="time"
-            display="default"
-            onChange={onChangeTime}
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={{ marginHorizontal: 15 }}
+      >
+        <View style={{ marginTop: "30%" }}>
+          {/* Input for Event Title */}
+          <TextInput
+            placeholder="Event Title"
+            value={title}
+            onChangeText={setTitle}
+            style={{ marginBottom: 20 }}
           />
-        )}
 
-        {/* Display selected time */}
-        <Text style={{ marginVertical: 10, fontSize: 18 }}>
-          {time.toLocaleTimeString()} {/* Format the time display */}
-        </Text>
+          {/* Button to show Time Picker */}
+          <Press
+            style={{
+              height: 40,
+              backgroundColor: "#890709",
+              marginTop: 20,
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: 5,
+            }}
+            onPress={showTimepicker}
+          >
+            <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600" }}>
+              Pick Time
+            </Text>
+          </Press>
+          {showTimePicker && (
+            <DateTimePicker
+              value={time} // Ensure date is always a Date object
+              mode="time"
+              display="default"
+              onChange={onChangeTime}
+            />
+          )}
 
-        {/* Save Event Button */}
-        <Text style={{ marginVertical: 10, fontSize: 18 }}>{date}</Text>
-        <Button title="Save Event" onPress={saveEvent} />
-      </View>
+          {/* Display selected time */}
+          <Text style={{ marginVertical: 10, fontSize: 18 }}>
+            {time.toLocaleTimeString()} {/* Format the time display */}
+          </Text>
+
+          {/* Save Event Button */}
+          <Text style={{ marginVertical: 10, fontSize: 18 }}>{date}</Text>
+          <Press
+            style={{
+              height: 40,
+              backgroundColor: "#890709",
+              marginTop: 20,
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: 5,
+            }}
+            onPress={saveEvent}
+          >
+            <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600" }}>
+              Save Event
+            </Text>
+          </Press>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
