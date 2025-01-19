@@ -14,6 +14,7 @@ import { Button } from "react-native-paper";
 // import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useNavigation } from "@react-navigation/native";
+import Press from "../../component/Press";
 
 export default function SavedEventsScreen() {
   const navigation = useNavigation();
@@ -66,7 +67,7 @@ export default function SavedEventsScreen() {
 
   // Function to edit an event (navigate back to EventScreen with event details)
   const editEvent = (event, index) => {
-    navigate.push({
+    navigation.push({
       pathname: "Event", // Assuming 'Event' is your EventScreen route
       params: { ...event, index }, // Pass the event details to the EventScreen
     });
@@ -91,7 +92,7 @@ export default function SavedEventsScreen() {
         <Button
           mode="outlined"
           onPress={() => confirmDelete(index)}
-          color="red"
+          style={{color: '890709'}}
         >
           Delete
         </Button>
@@ -108,8 +109,8 @@ export default function SavedEventsScreen() {
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       >
-        <View style={{ marginTop: "10%", marginHorizontal: 15 }}>
-          <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 20 }}>
+        <View style={{ marginTop: "20%", marginHorizontal: 15 }}>
+          <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 20, color: "#890709", }}>
             Saved Events
           </Text>
 
@@ -123,13 +124,22 @@ export default function SavedEventsScreen() {
             <Text>No events saved yet.</Text>
           )}
 
-          <Button
+          <Press
             mode="contained"
-            style={{ marginTop: 20 }}
-            onPress={() => navigate.back()} // Button to go back to the previous screen
+            style={{
+              height: 40,
+              backgroundColor: "#890709",
+              marginTop: 20,
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: 5,
+            }}
+            onPress={() => navigation.push("VisitationSchedule")} // Button to go back to the previous screen
           >
-            Back
-          </Button>
+            <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600" }}>
+              Back
+            </Text>
+          </Press>
         </View>
       </ScrollView>
     </SafeAreaView>
