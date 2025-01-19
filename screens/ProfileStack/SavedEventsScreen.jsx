@@ -11,10 +11,13 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Button } from "react-native-paper";
-import { router } from "expo-router";
+// import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import { useNavigation } from "@react-navigation/native";
 
 export default function SavedEventsScreen() {
+  const navigation = useNavigation();
+
   const [events, setEvents] = useState([]); // State to hold the saved events
   const [refreshing, setRefreshing] = useState(false); // For pull-to-refresh
 
@@ -63,7 +66,7 @@ export default function SavedEventsScreen() {
 
   // Function to edit an event (navigate back to EventScreen with event details)
   const editEvent = (event, index) => {
-    router.push({
+    navigate.push({
       pathname: "Event", // Assuming 'Event' is your EventScreen route
       params: { ...event, index }, // Pass the event details to the EventScreen
     });
@@ -98,7 +101,7 @@ export default function SavedEventsScreen() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#ffffff" }}>
-    <StatusBar style="dark" />
+      <StatusBar style="dark" />
       <ScrollView
         contentContainerStyle={{ flexGrow: 1 }}
         refreshControl={
@@ -123,7 +126,7 @@ export default function SavedEventsScreen() {
           <Button
             mode="contained"
             style={{ marginTop: 20 }}
-            onPress={() => router.back()} // Button to go back to the previous screen
+            onPress={() => navigate.back()} // Button to go back to the previous screen
           >
             Back
           </Button>

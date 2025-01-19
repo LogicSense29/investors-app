@@ -1,19 +1,34 @@
 // screens/EventScreen.js
 import React, { useState, useEffect } from "react";
-import { View, TextInput, Button, SafeAreaView, Platform, Text } from "react-native";
+import {
+  View,
+  TextInput,
+  Button,
+  SafeAreaView,
+  Platform,
+  Text,
+} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { useRoute } from "@react-navigation/native";
-import { router } from "expo-router";
+import { useNavigation } from "@react-navigation/native";
+
+// import { router } from "expo-router";
 
 export default function EventScreen() {
+  const navigation = useNavigation();
+
   const [title, setTitle] = useState("");
-  const [date, setDate] = useState(''); // Use Date object for date and time
+  const [date, setDate] = useState(""); // Use Date object for date and time
   const [time, setTime] = useState(new Date()); // Initialize with a new Date object
   const [showTimePicker, setShowTimePicker] = useState(false);
   const route = useRoute();
-  const { title: initialTitle, date: initialDate, time: initialTime, index } = route.params || {}; // Get event data if passed
-
+  const {
+    title: initialTitle,
+    date: initialDate,
+    time: initialTime,
+    index,
+  } = route.params || {}; // Get event data if passed
 
   // Set the date if passed from CalendarScreen
   useEffect(() => {
@@ -39,7 +54,7 @@ export default function EventScreen() {
     await AsyncStorage.setItem("events", JSON.stringify(events));
 
     // Navigate back
-    router.back();
+    navigate.back();
   };
 
   const showTimepicker = () => {

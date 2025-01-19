@@ -25,7 +25,7 @@ import Test2 from "../../component/Test2";
 const { width, height } = Dimensions.get("window");
 const placeholderImageSource = { uri: "https://picsum.photos/100/100" };
 
-const tabs = ["Royal Palm", "NuttyPark", "CattlePark", "A'maize"];
+const tabs = ["Royal Palm", "NuttyPark", "A'maize", "CattlePark"];
 
 export default function Person() {
   const navigation = useNavigation();
@@ -58,7 +58,7 @@ export default function Person() {
                 <Text style={{ color: "#890709", fontWeight: "bold" }}>
                   91%
                 </Text>
-                <Text style={{ color: "#890709" }}>Crypto</Text>
+                <Text style={{ color: "#890709" }}>Royal Palm</Text>
               </View>
 
               <View>
@@ -73,10 +73,8 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 90, width: 90, borderRadius: 100 }}
-                    source={require("../../assets/amaize-flyer.png")}
-                  />
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#fff" }}>NuttyPark</Text>
                 </View>
                 <View
                   style={{
@@ -90,10 +88,8 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 75, width: 75, borderRadius: 100 }}
-                    source={require("../../assets/farmm-flyer.png")}
-                  />
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#fff" }}>CattlePark</Text>
                 </View>
               </View>
 
@@ -109,10 +105,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#fff" }}>A'maize</Text>
               </View>
             </View>
           </View>
@@ -131,10 +125,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#890709", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#890709" }}>Crypto</Text>
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>91%</Text>
+                <Text style={{ color: "#fff" }}>Royal Palm</Text>
               </View>
 
               <View>
@@ -149,10 +141,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 90, width: 90, borderRadius: 100 }}
-                    source={require("../../assets/amaize-flyer.png")}
-                  />
+                  <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                    9%
+                  </Text>
+                  <Text style={{ color: "#890709" }}>NuttyPark</Text>
                 </View>
                 <View
                   style={{
@@ -166,10 +158,8 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 75, width: 75, borderRadius: 100 }}
-                    source={require("../../assets/farmm-flyer.png")}
-                  />
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#fff" }}>CattlePark</Text>
                 </View>
               </View>
 
@@ -185,10 +175,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#fff" }}>A'maize</Text>
               </View>
             </View>
           </View>
@@ -207,10 +195,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#890709", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#890709" }}>Crypto</Text>
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>91%</Text>
+                <Text style={{ color: "#fff" }}>Royal Palm</Text>
               </View>
 
               <View>
@@ -225,10 +211,8 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 90, width: 90, borderRadius: 100 }}
-                    source={require("../../assets/amaize-flyer.png")}
-                  />
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#fff" }}>NuttyPark</Text>
                 </View>
                 <View
                   style={{
@@ -242,10 +226,8 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 75, width: 75, borderRadius: 100 }}
-                    source={require("../../assets/farmm-flyer.png")}
-                  />
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                  <Text style={{ color: "#fff" }}>CattlePark</Text>
                 </View>
               </View>
 
@@ -261,10 +243,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#890709", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#890709" }}>A'maize</Text>
               </View>
             </View>
           </View>
@@ -283,10 +263,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#890709", fontWeight: "bold" }}>
-                  91%
-                </Text>
-                <Text style={{ color: "#890709" }}>Crypto</Text>
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>91%</Text>
+                <Text style={{ color: "#fff" }}>Royal Palm</Text>
               </View>
 
               <View>
@@ -301,10 +279,8 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 90, width: 90, borderRadius: 100 }}
-                    source={require("../../assets/amaize-flyer.png")}
-                  />
+                  <Text style={{ color: "#fff", fontWeight: "bold" }}>9%</Text>
+                  <Text style={{ color: "#fff" }}>NuttyPark</Text>
                 </View>
                 <View
                   style={{
@@ -318,10 +294,10 @@ export default function Person() {
                     justifyContent: "center",
                   }}
                 >
-                  <Image
-                    style={{ height: 75, width: 75, borderRadius: 100 }}
-                    source={require("../../assets/farmm-flyer.png")}
-                  />
+                  <Text style={{ color: "#890709", fontWeight: "bold" }}>
+                    0%
+                  </Text>
+                  <Text style={{ color: "#890709" }}>CattlePark</Text>
                 </View>
               </View>
 
@@ -337,10 +313,8 @@ export default function Person() {
                   justifyContent: "center",
                 }}
               >
-                <Image
-                  style={{ height: 75, width: 75, borderRadius: 100 }}
-                  source={require("../../assets/sales-flyer.png")}
-                />
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>0%</Text>
+                <Text style={{ color: "#fff" }}>A'maize</Text>
               </View>
             </View>
           </View>
