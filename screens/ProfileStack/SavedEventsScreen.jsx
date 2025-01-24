@@ -15,6 +15,7 @@ import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useNavigation } from "@react-navigation/native";
 import Press from "../../component/Press";
+import { PRIMARY } from "../../constants/Colors";
 
 export default function SavedEventsScreen() {
   const navigation = useNavigation();
@@ -67,10 +68,7 @@ export default function SavedEventsScreen() {
 
   // Function to edit an event (navigate back to EventScreen with event details)
   const editEvent = (event, index) => {
-    router.push({
-      pathname: "Event", // Assuming 'Event' is your EventScreen route
-      params: { ...event, index }, // Pass the event details to the EventScreen
-    });
+    navigation.navigate("Event", { ...event, index }); // Corrected navigation
   };
 
   // Function to render each event item
@@ -92,7 +90,7 @@ export default function SavedEventsScreen() {
         <Button
           mode="outlined"
           onPress={() => confirmDelete(index)}
-          style={{color: '#890709'}}
+          style={{ color: "#890709" }}
         >
           Delete
         </Button>
@@ -110,7 +108,14 @@ export default function SavedEventsScreen() {
         }
       >
         <View style={{ marginTop: "20%", marginHorizontal: 15 }}>
-          <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 20, color: "#890709", }}>
+          <Text
+            style={{
+              fontSize: 24,
+              fontWeight: "bold",
+              marginBottom: 20,
+              color: "#890709",
+            }}
+          >
             Saved Events
           </Text>
 
