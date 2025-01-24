@@ -42,7 +42,7 @@ export default function EventScreen() {
     const event = { title, date, time: time.toISOString() }; // Store time as ISO string
     const existingEvents = await AsyncStorage.getItem("events");
     let events = existingEvents ? JSON.parse(existingEvents) : [];
-
+  
     if (index !== undefined) {
       // Editing an existing event
       events[index] = event;
@@ -50,12 +50,14 @@ export default function EventScreen() {
       // Adding a new event
       events.push(event);
     }
-
+  
+    // Save updated events back to AsyncStorage
     await AsyncStorage.setItem("events", JSON.stringify(events));
-
+  
     // Navigate back
-    navigate.back();
+    navigation.goBack(); // Use `goBack()` to return to the previous screen
   };
+  
 
   const showTimepicker = () => {
     setShowTimePicker(true);

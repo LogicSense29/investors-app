@@ -50,8 +50,9 @@ const VisitationSchedule = ({}) => {
   };
 
   const onDayPress = (day) => {
-    router.push({ pathname: "Event", params: { date: day.dateString } }); // Corrected navigation
+    navigation.navigate("Event", { date: day.dateString }); // Corrected navigation
   };
+  
 
   return (
     <SafeAreaProvider
