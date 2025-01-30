@@ -362,6 +362,15 @@ export default function Person() {
       case "VisitationSchedule":
         navigation.navigate("VisitationSchedule");
         break;
+      case "CustomerCare":
+        navigation.navigate("CustomerCare");
+        break;
+      case "Affiliate":
+        navigation.navigate("Affiliate");
+        break;
+      case "PaymentHistory":
+        navigation.navigate("PaymentHistory");
+        break;
       default:
       // code block
     }
@@ -488,7 +497,7 @@ export default function Person() {
                   justifyContent: "space-between",
                 }}
                 onPress={() => {
-                  onPressList("Payment History");
+                  onPressList("PaymentHistory");
                 }}
               >
                 <View style={{ flexDirection: "row", gap: 20 }}>
@@ -545,7 +554,7 @@ export default function Person() {
                   justifyContent: "space-between",
                 }}
                 onPress={() => {
-                  onPressList("Customer Service");
+                  onPressList("CustomerCare");
                 }}
               >
                 {/* customer Service */}
@@ -564,6 +573,9 @@ export default function Person() {
                 style={{
                   flexDirection: "row",
                   justifyContent: "space-between",
+                }}
+                onPress={() => {
+                  onPressList("Affiliate")
                 }}
               >
                 <View style={{ flexDirection: "row", gap: 20 }}>
