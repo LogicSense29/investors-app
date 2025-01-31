@@ -24,7 +24,10 @@
       }
     },
     "expo": {
-      "newArchEnabled": true
+      "newArchEnabled": true,
+      "web": {
+        "bundler": "metro"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

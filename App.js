@@ -19,6 +19,8 @@ import { AuthContext } from "./component/context/Context";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import React, { useReducer, useEffect } from "react";
 import * as SecureStore from "expo-secure-store";
+import "./global.css"
+
 
 function authReducer(state, action) {
   switch (action.type) {

@@ -11,8 +11,14 @@ const Affiliate = () => {
   const navigation = useNavigation();
   const insets = useSafeAreaInsets();
 
-  const [markedDates, setMarkedDates] = useState({});
-  const [refreshing, setRefreshing] = useState(false); // 
+  const [refreshing, setRefreshing] = useState(false); 
+
+   // Handle the pull-to-refresh action
+   const onRefresh = async () => {
+    setRefreshing(true);
+    await fetchEvents(); // Re-fetch the events when user pulls to refresh
+    setRefreshing(false);
+  };
 
   return (
     <SafeAreaProvider
