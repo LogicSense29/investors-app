@@ -44,46 +44,82 @@ const CustomerCare = () => {
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       >
-        <View>
-          <Text className="text-2xl font-bold text-[#890709]">Contact Us</Text>
-          <Text className="text-sm font-medium text-[#890709]">
-            Any question or remarks? Just write us a message!
+        <View className="mt-8 ">
+          <Text className="text-2xl font-bold text-[#890709] text-center">
+            Contact Us
+          </Text>
+          <Text className="text-sm font-medium text-[#890709] text-center">
+            Any question or remarks? {"\n"} Just write us a message!
           </Text>
         </View>
 
-        <View>
-          <View>
-            <Text className="text-xl font-bold text-white">
-              Contact Information
-            </Text>
-            <Text className="text-xs font-normal text-white">
-              Say something to start a live chat!
-            </Text>
+        <View className=" mt-6 ">
+          <View
+            style={{ borderRadius: 8 }}
+            className="rounded-xl bg-black h-[397] "
+          >
+            <View className="items-center ">
+              <Text
+                style={{ marginTop: 16 }}
+                className="text-xl font-bold text-white text-center "
+              >
+                Contact Information
+              </Text>
+              <Text
+                style={{ marginTop: 6 }}
+                className="text-xs font-normal text-white text-center "
+              >
+                Say something to start a live chat!
+              </Text>
+            </View>
+            <View style={{ marginTop: 12 }}>
+              <Feather
+                name="phone-call"
+                size={24}
+                color="white"
+                className="text-center"
+              />
+              <Text
+                style={{ marginTop: 10 }}
+                className="text-xs font-normal text-white text-center"
+              >
+                +1012 3456 789
+              </Text>
+            </View>
+            <View style={{ marginTop: 15 }}>
+              <Feather
+                name="mail"
+                size={24}
+                color="white"
+                className="text-center"
+              />
+              <Text
+                style={{ marginTop: 10 }}
+                className="text-xs font-normal text-white text-center"
+              >
+                demo@gmail.com
+              </Text>
+            </View>
+            <View style={{ marginTop: 15 }}>
+              <Entypo
+                name="location-pin"
+                size={24}
+                color="white"
+                className="text-center"
+              />
+              <Text
+                style={{ marginTop: 10 }}
+                className="text-xs font-normal text-white text-center"
+              >
+                132 Dartmouth Street Boston, {"\n"} Massachusetts 02156 United States
+              </Text>
+            </View>
+            <View style={{marginTop: 58}} className="flex-row justify-evenly ">
+              <Entypo name="twitter" size={24} color="white" />
+              <Entypo name="instagram" size={24} color="white" />
+              <FontAwesome name="whatsapp" size={24} color="white" />
+            </View>
           </View>
-          <View>
-            <Feather name="phone-call" size={24} color="white" />
-            <Text className="text-xs font-normal text-white">
-              +1012 3456 789
-            </Text>
-          </View>
-          <View>
-            <Feather name="mail" size={24} color="white" />
-            <Text className="text-xs font-normal text-white">
-              demo@gmail.com
-            </Text>
-          </View>
-          <View>
-            <Entypo name="location-pin" size={24} color="white" />
-            <Text className="text-xs font-normal text-white">
-              132 Dartmouth Street Boston, Massachusetts 02156 United States
-            </Text>
-          </View>
-        </View>
-
-        <View className="flex-row justify-evenly">
-          <Entypo name="twitter" size={24} color="black" />
-          <Entypo name="instagram" size={24} color="black" />
-          <FontAwesome name="whatsapp" size={24} color="black" />
         </View>
       </ScrollView>
     </SafeAreaProvider>
