@@ -55,8 +55,8 @@ const CustomerCare = () => {
 
         <View className=" mt-6 ">
           <View
-            style={{ borderRadius: 8 }}
-            className="rounded-xl bg-black h-[397] "
+            style={{ borderRadius: 8, backgroundColor: PRIMARY }}
+            className="rounded-xl bg-[#890709] h-[397] "
           >
             <View className="items-center ">
               <Text
