@@ -49,11 +49,11 @@ const TransactionItem = ({ icon: Icon, title, category, amount, date, isError, i
 );
 
 const TabButton = ({ tab, isActive, onPress }) => (
-  <Press className='ml-[-10] mr-[6]' onPress={onPress}>
-    <Text className={`mx-[8] text-center h-[21px] rounded-3xl w-full font-semibold ${
+  <Press className='ml-[-8] mr-[-4]' onPress={onPress}>
+    <Text className={`mx-[6] text-center h-[21px] rounded-3xl w-[70] font-semibold ${
       isActive 
-        ? 'bg-black text-white' 
-        : 'bg-white text-black border border-black'
+        ? 'bg-[#890709] text-white' 
+        : 'bg-white text-[#890709] border border-[#890709]'
     }`}>
       {tab}
     </Text>
