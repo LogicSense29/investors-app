@@ -158,7 +158,7 @@ const Affiliate = () => {
                     </Text>
                   </View>
                   <Press
-                    onPress={() => router.push("/")}
+                    onPress={() => router.push("/Affiliate")}
                     style={{
                       height: 65,
                       borderRadius: 24,
